@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import Weather from "./Wether";
+import Weather from "./Weather";
 
 function App() {
   return (
