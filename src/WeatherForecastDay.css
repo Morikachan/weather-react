@@ -1,0 +1,16 @@
+.WeatherForecastDay .forecast-day {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.WeatherForecastDay .forecast-temperature {
+  color: #ff709b;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.WeatherForecastDay .forecast-temperature-min {
+  opacity: 0.6;
+  margin-left: 10px;
+}

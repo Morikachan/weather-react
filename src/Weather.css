@@ -1,7 +1,7 @@
 .Weather {
   padding: 60px 40px;
   font-family: arial, sans-serif;
-  border-radius: 6px;
+  border-radius: 10px;
   color: rgba(39, 33, 66, 0.5);
   background-color: #ffffff;
   box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
@@ -42,6 +42,10 @@
   padding: 0;
 }
 
+.Weather strong {
+  color: #ff709b;
+}
+
 .Weather .temperature-container {
   padding-top: 45px;
 }
@@ -66,4 +70,9 @@
   position: relative;
   line-height: 1;
   top: -16px;
+}
+
+.Weather .WeatherForecast canvas {
+  display: block;
+  margin: 20px auto;
 }

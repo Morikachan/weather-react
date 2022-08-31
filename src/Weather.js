@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 import "./Weather.css";
 import { Oval } from "react-loader-spinner";
 
@@ -51,7 +52,7 @@ export default function Weather({ defaultCity }) {
                   onChange={cityUpdate}
                 />
               </div>
-              <div className="col-3">
+              <div className="col-3 p-0">
                 <input
                   type="submit"
                   value="Search"
@@ -62,24 +63,27 @@ export default function Weather({ defaultCity }) {
           </form>
 
           <WeatherInfo data={weatherData} />
+          <WeatherForecast coordinates={weatherData.coordinates} />
         </div>
       </div>
     );
   } else {
     apiCall();
     return (
-      <Oval
-        height={80}
-        width={80}
-        color="#4fa94d"
-        wrapperStyle={{}}
-        wrapperClass=""
-        visible={true}
-        ariaLabel="oval-loading"
-        secondaryColor="#4fa94d"
-        strokeWidth={2}
-        strokeWidthSecondary={2}
-      />
+      <div className="d-flex justify-content-center  ">
+        <Oval
+          height={80}
+          width={80}
+          color="#7c73e6"
+          wrapperStyle={{}}
+          wrapperClass=""
+          visible={true}
+          ariaLabel="oval-loading"
+          secondaryColor="#7c73e6"
+          strokeWidth={2}
+          strokeWidthSecondary={2}
+        />
+      </div>
     );
   }
 }
