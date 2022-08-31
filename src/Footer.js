@@ -5,7 +5,11 @@ export default function Footer() {
   return (
     <footer className="Footer">
       This project was coded by{" "}
-      <a href="https://www.delac.io/" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://www.linkedin.com/in/oleksandra-mishchenko-33497b245/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Oleksandra Mishchenko
       </a>{" "}
       and is{" "}
