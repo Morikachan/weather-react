@@ -20,7 +20,6 @@ function WeatherForecast({ coordinates }) {
   }, [coordinates]);
 
   function handleResponse(response) {
-    console.log(response);
     setForecastData(response.data.daily);
     setLoaded(true);
   }
@@ -36,6 +35,8 @@ function WeatherForecast({ coordinates }) {
                   <WeatherForecastDay data={dailyForecast} />
                 </div>
               );
+            } else {
+              return null;
             }
           })}
         </div>

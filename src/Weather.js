@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
+import Footer from "./Footer";
 import "./Weather.css";
 import { Oval } from "react-loader-spinner";
 
@@ -64,6 +65,7 @@ export default function Weather({ defaultCity }) {
 
           <WeatherInfo data={weatherData} />
           <WeatherForecast coordinates={weatherData.coordinates} />
+          <Footer />
         </div>
       </div>
     );

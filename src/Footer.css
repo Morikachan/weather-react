@@ -1,0 +1,17 @@
+.Footer {
+  margin-top: 30px;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  border-top: 1px solid #eaeaea;
+  padding-top: 30px;
+}
+
+.Footer a {
+  text-decoration: none;
+  color: #7c73e6;
+}
+
+.Footer a:hover {
+  text-decoration: underline;
+}
